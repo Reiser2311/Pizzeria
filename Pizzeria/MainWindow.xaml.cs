@@ -102,5 +102,42 @@ namespace Pizzeria
 
             return texto;
         }
+
+        public void cambiarImagen(StackPanel stackPanel, String ruta)
+        {
+            for (int i = 0; i < stackPanel.Children.Count; i++)
+            {
+                if (stackPanel.Children[i].GetType() == typeof(Image))
+                {
+                    Image img = (Image)stackPanel.Children[i];
+                    img.Source = new BitmapImage(new Uri(ruta,UriKind.Relative));
+                }
+            }
+        }
+
+        private void CocaCola_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Bebida, "/CocaCola.png");
+        }
+
+        private void Sprite_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Bebida, "/Sprite.png");
+        }
+
+        private void Fanta_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Bebida, "/Fanta.png");
+        }
+
+        private void Nestea_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Bebida, "/Nestea.png");
+        }
+
+        private void DrPepper_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Bebida, "/DrPepper.png");
+        }
     }
 }
