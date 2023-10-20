@@ -109,5 +109,14 @@
   <ItemGroup>
     <Resource Include="Sprite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="masaClasica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="masaFina.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="queso.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

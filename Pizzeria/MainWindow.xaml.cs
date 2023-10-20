@@ -60,8 +60,8 @@ namespace Pizzeria
         private void Pedir_Click(object sender, RoutedEventArgs e)
         {
             String pedido = "Pedido:\n";
-            pedido += ponerTexto(Tipo_de_masa) + "\n";
             pedido += ponerTexto(Bebida) + "\n";
+            pedido += ponerTexto(Tipo_de_masa) + "\n";
             pedido += ponerTexto(Ingredientes) + "\n";
 
             Pedido1.Text = pedido;
@@ -138,6 +138,21 @@ namespace Pizzeria
         private void DrPepper_Checked(object sender, RoutedEventArgs e)
         {
             cambiarImagen(Bebida, "/DrPepper.png");
+        }
+
+        private void Queso_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Tipo_de_masa, "/queso.jpg");
+        }
+
+        private void Clasica_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Tipo_de_masa, "masaClasica.jpg");
+        }
+
+        private void Fina_Checked(object sender, RoutedEventArgs e)
+        {
+            cambiarImagen(Tipo_de_masa, "masaFina.png");
         }
     }
 }

@@ -18,7 +18,7 @@
         <Button x:Name="Reset1" Content="Reset" HorizontalAlignment="Left" Margin="642,371,0,0" VerticalAlignment="Top" Width="95" Background="#FFB259FF" BorderBrush="#FF8300B7" FontSize="16" Height="31" Click="Reset1_Click"/>
 
 
-        <StackPanel x:Name="Bebida" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Height="276" Margin="47,78,0,0">
+        <StackPanel x:Name="Bebida" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Top" Height="276" Margin="33,78,0,0">
             <Label Content="Bebida" FontSize="16" Height="32" Width="90"/>
             <RadioButton x:Name="CocaCola" Content="Coca Cola" FontSize="16" Checked="CocaCola_Checked" IsChecked="True"/>
             <RadioButton x:Name="Sprite" Content="Sprite" FontSize="16" Checked="Sprite_Checked"/>
@@ -42,12 +42,12 @@
 
         </StackPanel>
         <TextBlock x:Name="Pedido1" HorizontalAlignment="Left" Margin="439,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="308" Width="322" FontSize="16"><Run Language="es-es" Text="Pedido:"/></TextBlock>
-        <StackPanel x:Name="Tipo_de_masa" Margin="152,78,506,151" Orientation="Vertical">
+        <StackPanel x:Name="Tipo_de_masa" Margin="138,78,501,96" Orientation="Vertical">
             <Label Content="Tipo de masa" FontSize="16" Height="31" Width="110"/>
-            <RadioButton x:Name="Queso" Content="Rellena de queso" FontSize="16" Height="20" Width="142"/>
-            <RadioButton x:Name="Clasica" Content="Masa clasica" FontSize="16" Height="24" Width="145"/>
-            <RadioButton x:Name="Fina" Content="Masa fina" FontSize="16" Height="20" Width="150"/>
-            <Image x:Name="ImgMasa" Height="100" Width="100"/>
+            <RadioButton x:Name="Queso" Content="Rellena de queso" FontSize="16" Height="20" Width="142" Checked="Queso_Checked"/>
+            <RadioButton x:Name="Clasica" Content="Masa clasica" FontSize="16" Height="24" Width="145" IsChecked="True" Checked="Clasica_Checked"/>
+            <RadioButton x:Name="Fina" Content="Masa fina" FontSize="16" Height="20" Width="150" Checked="Fina_Checked"/>
+            <Image x:Name="ImgMasa" Height="161" Width="142" Source="/masaClasica.jpg"/>
 
 
         </StackPanel>
